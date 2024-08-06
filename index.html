@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header" id="start-screen">
+            <h2>Select a Topic</h2>
+            <select id="category-select">
+                <option value="9">General Knowledge</option>
+                <option value="11">Movies</option>
+                <option value="12">Music</option>
+                <option value="17">Science & Nature</option>
+                <option value="18">Computers</option>
+                <option value="21">Sports</option>
+            </select>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+        <div class="quiz-header" id="quiz-screen" style="display: none;">
+            <h2 id="question">Question text</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="a">
+                    <label for="a" id="a_text">Answer A</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="b">
+                    <label for="b" id="b_text">Answer B</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="c">
+                    <label for="c" id="c_text">Answer C</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="d">
+                    <label for="d" id="d_text">Answer D</label>
+                </li>
+            </ul>
+        </div>
+        <button id="submit" style="display: none;">Submit</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
